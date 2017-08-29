@@ -13,7 +13,7 @@ Note: `craftman` does not support Windows.
 
 To install or update craftman, you can use cURL:
 
-    curl -o- https://raw.githubusercontent.com/hatchwd/craftman2/master/craftman_install | sh
+    curl -o- https://raw.githubusercontent.com/hatchwd/craftman2/master/craftman_install | CM="craftman2" sh
 
 or Wget:
 
@@ -22,7 +22,7 @@ or Wget:
 <sub>The script clones the craftman repository to `~/.craftman2/bin` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).</sub>
 
 You can customize the install source, directory and profile using the `CRAFTMAN_DIR`, and `PROFILE` variables.
-Eg: `curl ... | CRAFTMAN_DIR="path/to/craftman" sh`
+Eg: `curl ... | CRAFTMAN_DIR="path/to/craftman2" sh`
 
 ## Usage
 
@@ -30,22 +30,22 @@ Eg: `curl ... | CRAFTMAN_DIR="path/to/craftman" sh`
 
     Craft CMS Manager
 
-    Usage: craftman [options] <COMMAND> [args]
+    Usage: craftman2 [options] <COMMAND> [args]
 
     Commands:
-     craftman install               Install Craft CMS in current directory
-     craftman open [path]           Open Craft CMS public site
-     craftman admin                 Open Craft CMS admin dashboard
-     craftman start                 Start Craft CMS docker containers
-     craftman stop                  Stop Craft CMS docker containers
-     craftman status                Check Craft CMS docker containers status
-     craftman ip                    Show Craft CMS docker container IP address
-     craftman run                   Open bash or run a command on Craft docker container
-     craftman regenerate            Regenerate all configuration files
-     craftman reconfigure           Run all scripts/install.* files
-     craftman copy                  Copy scripts/override/**/* to craft container root /
-     craftman remove                Remove all containers
-     craftman --upgrade             Upgrade Craftman
+     craftman2 install               Install Craft CMS in current directory
+     craftman2 open [path]           Open Craft CMS public site
+     craftman2 admin                 Open Craft CMS admin dashboard
+     craftman2 start                 Start Craft CMS docker containers
+     craftman2 stop                  Stop Craft CMS docker containers
+     craftman2 status                Check Craft CMS docker containers status
+     craftman2 ip                    Show Craft CMS docker container IP address
+     craftman2 run                   Open bash or run a command on Craft docker container
+     craftman2 regenerate            Regenerate all configuration files
+     craftman2 reconfigure           Run all scripts/install.* files
+     craftman2 copy                  Copy scripts/override/**/* to craft container root /
+     craftman2 remove                Remove all containers
+     craftman2 --upgrade             Upgrade Craftman
 
     Options:
      -h, --help
@@ -58,23 +58,23 @@ Eg: `curl ... | CRAFTMAN_DIR="path/to/craftman" sh`
      -R, --force-recreate  Force to reconfigure and recreate containers
 
     PHP Composer commands:
-     craftman composer:lock         Regenerate composer.lock for your composer.json file
-     craftman composer:prepare      Generate required files to deploy to Heroku
+     craftman2 composer:lock         Regenerate composer.lock for your composer.json file
+     craftman2 composer:prepare      Generate required files to deploy to Heroku
 
     Heroku commands:
-     craftman heroku:prepare        Generate required files to deploy to Heroku
+     craftman2 heroku:prepare        Generate required files to deploy to Heroku
 
     MySQL commands:
-     craftman mysql:run             Open mysql client or run a command on MySQL docker container
-     craftman mysql:backup          Create a backup at backups/
-     craftman mysql:restore <file>  Restore a backup from <file> (.sql.gz) to MySQL database
+     craftman2 mysql:run             Open mysql client or run a command on MySQL docker container
+     craftman2 mysql:backup          Create a backup at backups/
+     craftman2 mysql:restore <file>  Restore a backup from <file> (.sql.gz) to MySQL database
 
     PHP Docker Image commands:
-     craftman phpimage:build [name] [base-image]  Build a new docker php image from this base docker image
-     craftman phpimage:prepare                    Create base structure for php image generation
-     craftman phpimage:set <name>                 Save default php image
-     craftman phpimage:get                        Shows current php image
-     craftman phpimage:remove                     Clear php image
+     craftman2 phpimage:build [name] [base-image]  Build a new docker php image from this base docker image
+     craftman2 phpimage:prepare                    Create base structure for php image generation
+     craftman2 phpimage:set <name>                 Save default php image
+     craftman2 phpimage:get                        Shows current php image
+     craftman2 phpimage:remove                     Clear php image
 
     Full Documentation: https://github.com/gabrielmoreira/craftman
 

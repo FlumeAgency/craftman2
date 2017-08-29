@@ -99,7 +99,7 @@ craftman_do_install() {
 
   CRAFTMAN_PROFILE="$(craftman_detect_profile)"
 
-  SOURCE_STR="\nalias craftman=\"$CRAFTMAN_DIR/craftman\""
+  SOURCE_STR="\nalias craftman2=\"$CRAFTMAN_DIR/craftman\""
 
   if [ -z "$CRAFTMAN_PROFILE" ] ; then
     echo "=> Profile not found. Tried $CRAFTMAN_PROFILE (as defined in \$PROFILE), ~/.bashrc, ~/.bash_profile, ~/.zshrc, and ~/.profile."
