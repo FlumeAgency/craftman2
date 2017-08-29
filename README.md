@@ -13,11 +13,11 @@ Note: `craftman` does not support Windows.
 
 To install or update craftman, you can use cURL:
 
-    curl -o- https://raw.githubusercontent.com/gabrielmoreira/craftman/master/craftman_install | sh
+    curl -o- https://raw.githubusercontent.com/hatchwd/craftman2/master/craftman_install | sh
 
 or Wget:
 
-    wget -qO- https://raw.githubusercontent.com/gabrielmoreira/craftman/master/craftman_install | sh
+    wget -qO- https://raw.githubusercontent.com/hatchwd/craftman2/master/craftman_install | sh
 
 <sub>The script clones the craftman repository to `~/.craftman2/bin` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).</sub>
 
