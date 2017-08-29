@@ -7,7 +7,7 @@ craftman_has() {
 }
 
 if [ -z "$CRAFTMAN_DIR" ]; then
-  CRAFTMAN_DIR="$HOME/.craftman/bin"
+  CRAFTMAN_DIR="$HOME/.craftman2/bin"
 fi
 
 craftman_latest_version() {

@@ -70,9 +70,9 @@ _cm_initialize()
   CM="$(basename "$(cm_get_canonical_path "$0")")"
   CM_ROOT="$(dirname "$(cm_get_canonical_path "$0")")"
   if [ -z "$CRAFTMAN_DIR" ]; then
-    CRAFTMAN_DIR="$HOME/.craftman"
+    CRAFTMAN_DIR="$HOME/.craftman2"
   fi
-  CM_PROJECT_CONFIG=".craftman"
+  CM_PROJECT_CONFIG=".craftman2"
   CM_PROJECT_PATH=$(cm_find_closest "$CM_PROJECT_CONFIG")
   if [ "$CM_PROJECT_PATH" = "$(dirname "$CRAFTMAN_DIR")" ]; then
     CM_PROJECT_PATH="$(pwd)"
@@ -540,7 +540,7 @@ _cm_generate_docker_compose_config()
   if [ "$CM_GENERATE_FILE" != "" ]; then
     if [ "$CM_CRAFT_HTTP_PORT" != "" ]; then
       _CM_DOCKER_CRAFT_PORTS=$(cat <<SETVAR
-  ports:        
+  ports:
     - $CM_CRAFT_HTTP_PORT:80
 SETVAR
 )
@@ -965,7 +965,7 @@ _cm_clear_docker_ports() # beta
 # *******
 #  HOOKS
 # *******
-#  Override hooks at $CM_PROJECT_PATH/.craftman/config shellscript
+#  Override hooks at $CM_PROJECT_PATH/.craftman2/config shellscript
 
 # Hook for change variables/configurations
 cm_config_hook()

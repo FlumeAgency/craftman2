@@ -19,7 +19,7 @@ or Wget:
 
     wget -qO- https://raw.githubusercontent.com/gabrielmoreira/craftman/master/craftman_install | sh
 
-<sub>The script clones the craftman repository to `~/.craftman/bin` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).</sub>
+<sub>The script clones the craftman repository to `~/.craftman2/bin` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).</sub>
 
 You can customize the install source, directory and profile using the `CRAFTMAN_DIR`, and `PROFILE` variables.
 Eg: `curl ... | CRAFTMAN_DIR="path/to/craftman" sh`
@@ -119,7 +119,7 @@ Sometimes we need a little more customization. For that, you can use craftman ho
 
 If you want hook mysql restore to edit .sql file before import:
 
-Edit your `[YOUR-PROJECT-DIRECTORY]/.craftman/config` and add this function:
+Edit your `[YOUR-PROJECT-DIRECTORY]/.craftman2/config` and add this function:
 
 <sub>**IMPORTANT**: THIS HOOK CODE IS JUST A SAMPLE USAGE</sub>
 
@@ -158,7 +158,7 @@ function mysql_restore_hook( *[sql-file-path]* )
 
 ## Plugins
 
-Create your plugin and put at `~/.craftman/plugins/[your-plugin]/[your-plugin].plugin`
+Create your plugin and put at `~/.craftman2/plugins/[your-plugin]/[your-plugin].plugin`
 
 All public functions must start with `pluginname__`
 
