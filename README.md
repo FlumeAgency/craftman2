@@ -17,7 +17,7 @@ To install or update craftman, you can use cURL:
 
 or Wget:
 
-    wget -qO- https://raw.githubusercontent.com/hatchwd/craftman2/master/craftman_install | sh
+    wget -qO- https://raw.githubusercontent.com/hatchwd/craftman2/master/craftman_install | CM="craftman2" sh
 
 <sub>The script clones the craftman repository to `~/.craftman2/bin` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).</sub>
 
